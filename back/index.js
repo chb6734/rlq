@@ -2,23 +2,23 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const PORT = 3000;
-const { mogoUrl } = require('./key');
 const mongoose = require('mongoose');
 
-require('./models/User');
+
+require("dotenv").config({ path: 'variables.env' });
+
+
+require('./models/Quotes');
+
+
+const authroutes = require('./routes/authRoutes')
 app.use(bodyParser.json());
+app.use(authroutes);
 
-mongoose.connect(mogoUrl, {
-    useNewUrlParser: true
-})
+mongoose.connect(process.env.MONGO_URL)
+    .then(console.log("connected"))
+    .catch(err => console.log(err))
 
-mongoose.connection.on('connected', () => {
-    console.log("connected to mongo")
-})
-
-mongoose.connection.on('error', (err) => {
-    console.log("this is error", err)
-})
 
 
 app.post('/', (req, res) => {
