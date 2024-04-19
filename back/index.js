@@ -3,7 +3,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const PORT = 3000;
 const mongoose = require('mongoose');
-
+const qouteRoutes = require('./routes/quoteRoutes')
+const cors = require('cors');
 
 require("dotenv").config({ path: 'variables.env' });
 
@@ -11,9 +12,9 @@ require("dotenv").config({ path: 'variables.env' });
 require('./models/Quotes');
 
 
-const authroutes = require('./routes/authRoutes')
+app.use(cors())
 app.use(bodyParser.json());
-app.use(authroutes);
+app.use(qouteRoutes);
 
 mongoose.connect(process.env.MONGO_URL)
     .then(console.log("connected"))
