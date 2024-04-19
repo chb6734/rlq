@@ -11,10 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		20A8FD0318587C74A58694E6 /* libPods-rlq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DC1FCE4FEF172F97163D30 /* libPods-rlq.a */; };
 		2A44F96C2BCD711F00F81142 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A44F96B2BCD711F00F81142 /* main.jsbundle */; };
+		629BD1BE3744948C76AC6259 /* libPods-rlq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DF49BBF30706AEF5D9E04 /* libPods-rlq.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		EB3BB47C3F727F8E348B6525 /* libPods-rlq-rlqTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7901DDB4977AA695C0BB243C /* libPods-rlq-rlqTests.a */; };
+		D5118530C24C115B73EB5F01 /* libPods-rlq-rlqTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8323B1B528C1F73D09D7791B /* libPods-rlq-rlqTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +37,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rlq/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rlq/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rlq/main.m; sourceTree = "<group>"; };
-		28DC1FCE4FEF172F97163D30 /* libPods-rlq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rlq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A44F96B2BCD711F00F81142 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		34C73B9D804108F88B650B40 /* Pods-rlq.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq.debug.xcconfig"; path = "Target Support Files/Pods-rlq/Pods-rlq.debug.xcconfig"; sourceTree = "<group>"; };
-		34CE6123CCA7F9F5C4EEAFD5 /* Pods-rlq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq.release.xcconfig"; path = "Target Support Files/Pods-rlq/Pods-rlq.release.xcconfig"; sourceTree = "<group>"; };
-		7901DDB4977AA695C0BB243C /* libPods-rlq-rlqTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rlq-rlqTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		461DF49BBF30706AEF5D9E04 /* libPods-rlq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rlq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4654D255DA09AB16F02D10ED /* Pods-rlq-rlqTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq-rlqTests.debug.xcconfig"; path = "Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D22538C8CD0FE19C79C947A /* Pods-rlq-rlqTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq-rlqTests.release.xcconfig"; path = "Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rlq/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C3DF1330D0FBDD2ECFA1EA40 /* Pods-rlq-rlqTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq-rlqTests.release.xcconfig"; path = "Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests.release.xcconfig"; sourceTree = "<group>"; };
-		DE7D96F1A6CDCCF05EE765A9 /* Pods-rlq-rlqTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq-rlqTests.debug.xcconfig"; path = "Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8323B1B528C1F73D09D7791B /* libPods-rlq-rlqTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rlq-rlqTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C849DD644FFEDF6F64A1A6 /* Pods-rlq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq.release.xcconfig"; path = "Target Support Files/Pods-rlq/Pods-rlq.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F3AA20AED131021D57E0F58D /* Pods-rlq.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlq.debug.xcconfig"; path = "Target Support Files/Pods-rlq/Pods-rlq.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3BB47C3F727F8E348B6525 /* libPods-rlq-rlqTests.a in Frameworks */,
+				D5118530C24C115B73EB5F01 /* libPods-rlq-rlqTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A8FD0318587C74A58694E6 /* libPods-rlq.a in Frameworks */,
+				629BD1BE3744948C76AC6259 /* libPods-rlq.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				28DC1FCE4FEF172F97163D30 /* libPods-rlq.a */,
-				7901DDB4977AA695C0BB243C /* libPods-rlq-rlqTests.a */,
+				461DF49BBF30706AEF5D9E04 /* libPods-rlq.a */,
+				8323B1B528C1F73D09D7791B /* libPods-rlq-rlqTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				34C73B9D804108F88B650B40 /* Pods-rlq.debug.xcconfig */,
-				34CE6123CCA7F9F5C4EEAFD5 /* Pods-rlq.release.xcconfig */,
-				DE7D96F1A6CDCCF05EE765A9 /* Pods-rlq-rlqTests.debug.xcconfig */,
-				C3DF1330D0FBDD2ECFA1EA40 /* Pods-rlq-rlqTests.release.xcconfig */,
+				F3AA20AED131021D57E0F58D /* Pods-rlq.debug.xcconfig */,
+				88C849DD644FFEDF6F64A1A6 /* Pods-rlq.release.xcconfig */,
+				4654D255DA09AB16F02D10ED /* Pods-rlq-rlqTests.debug.xcconfig */,
+				7D22538C8CD0FE19C79C947A /* Pods-rlq-rlqTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "rlqTests" */;
 			buildPhases = (
-				848BB6AA2AD42319D3D1A7ED /* [CP] Check Pods Manifest.lock */,
+				D8B58F2A723F0BDB068EBD0C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				CF89ECF44C78BFA5414E1469 /* [CP] Embed Pods Frameworks */,
-				2788B9E8DC357F7ECADCA189 /* [CP] Copy Pods Resources */,
+				B17CBDD6AEB2C467DE6943BA /* [CP] Embed Pods Frameworks */,
+				140C032ED9B2E2A35813D0F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,13 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rlq" */;
 			buildPhases = (
-				345E2F6326240E039206B3C6 /* [CP] Check Pods Manifest.lock */,
+				071003CFD99A02BACF2A452B /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5AA7A52373CFDF2D7BC41CC4 /* [CP] Embed Pods Frameworks */,
-				32AAA22F6CB53C6CD39D75FE /* [CP] Copy Pods Resources */,
+				473F999DA88DC5DEEB39E9AB /* [CP] Embed Pods Frameworks */,
+				A9CB72E8F0E3723850F09C02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,41 +269,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		2788B9E8DC357F7ECADCA189 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		32AAA22F6CB53C6CD39D75FE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rlq/Pods-rlq-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rlq/Pods-rlq-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rlq/Pods-rlq-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		345E2F6326240E039206B3C6 /* [CP] Check Pods Manifest.lock */ = {
+		071003CFD99A02BACF2A452B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,7 +291,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5AA7A52373CFDF2D7BC41CC4 /* [CP] Embed Pods Frameworks */ = {
+		140C032ED9B2E2A35813D0F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		473F999DA88DC5DEEB39E9AB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +325,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rlq/Pods-rlq-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		848BB6AA2AD42319D3D1A7ED /* [CP] Check Pods Manifest.lock */ = {
+		A9CB72E8F0E3723850F09C02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rlq/Pods-rlq-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rlq/Pods-rlq-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rlq/Pods-rlq-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B17CBDD6AEB2C467DE6943BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B58F2A723F0BDB068EBD0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,23 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF89ECF44C78BFA5414E1469 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rlq-rlqTests/Pods-rlq-rlqTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,7 +414,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE7D96F1A6CDCCF05EE765A9 /* Pods-rlq-rlqTests.debug.xcconfig */;
+			baseConfigurationReference = 4654D255DA09AB16F02D10ED /* Pods-rlq-rlqTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -441,7 +441,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3DF1330D0FBDD2ECFA1EA40 /* Pods-rlq-rlqTests.release.xcconfig */;
+			baseConfigurationReference = 7D22538C8CD0FE19C79C947A /* Pods-rlq-rlqTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -465,7 +465,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34C73B9D804108F88B650B40 /* Pods-rlq.debug.xcconfig */;
+			baseConfigurationReference = F3AA20AED131021D57E0F58D /* Pods-rlq.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -492,7 +492,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34CE6123CCA7F9F5C4EEAFD5 /* Pods-rlq.release.xcconfig */;
+			baseConfigurationReference = 88C849DD644FFEDF6F64A1A6 /* Pods-rlq.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
