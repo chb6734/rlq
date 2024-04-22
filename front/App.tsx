@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -21,28 +22,27 @@ interface QouteProps {
 
 function App(): React.JSX.Element {
   const [qoutes, setQoutes] = useState<QouteProps | null>(null);
-  const send_param = {headers};
   const itemlist: QouteProps[] = [];
-  var itemCnt: number = 0;
 
-  useEffect(() => {
+  function refresh() {
     fetch('http://10.0.2.2:8080/getlq')
       .then(res => res.json())
       .then(data => {
         if (data) {
           data.forEach((item: QouteProps) => {
             itemlist.push(item);
-            console.log('console : ' + itemlist);
           });
-          console.log('itemlist : ' + itemlist);
-          itemCnt = itemlist.length;
-          setQoutes(itemlist[Math.floor(Math.random() * itemCnt)]);
+          setQoutes(itemlist[Math.floor(Math.random() * itemlist.length)]);
         } else {
           console.log('fail');
         }
         // console.log(data);
       })
       .catch(err => console.log(err));
+  }
+
+  useEffect(() => {
+    refresh();
   }, []);
 
   // useEffect(() => {
@@ -80,6 +80,7 @@ function App(): React.JSX.Element {
       ) : (
         <Text style={styles.titleSize}>데이터가 없습니다.</Text>
       )}
+      <Button title="새로고침" onPress={refresh} />
     </View>
   );
 }
