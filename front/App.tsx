@@ -34,9 +34,8 @@ function App(): React.JSX.Element {
           });
           setQoutes(itemlist[Math.floor(Math.random() * itemlist.length)]);
         } else {
-          console.log('fail');
+          console.log('data is empty');
         }
-        // console.log(data);
       })
       .catch(err => console.log(err));
   }
@@ -44,30 +43,6 @@ function App(): React.JSX.Element {
   useEffect(() => {
     refresh();
   }, []);
-
-  // useEffect(() => {
-  //   const getQoutes = async () => {
-  //     try {
-  //       const res: any = await fetch('http://10.0.2.2:8080/getlq');
-  //       const qouteRes = res.json();
-  //       console.log('res : ' + res.data);
-
-  //       const itemlist: QouteProps[] = [];
-  //       if (qouteRes.data) {
-  //         qouteRes.forEach((item: QouteProps) => {
-  //           itemlist.push(item);
-  //           console.log('console : ' + itemlist);
-  //         });
-  //         setQoutes(itemlist[Math.random()]);
-  //       }
-  //     } catch (err) {
-  //       console.log('err : ' + err);
-  //     }
-  //   };
-  //   getQoutes();
-  // }, []);
-
-  console.log('test : ' + qoutes);
 
   // return <HomeScreen />;
   return (
