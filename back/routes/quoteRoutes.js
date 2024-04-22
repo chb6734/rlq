@@ -17,14 +17,22 @@ router.post('/savelq', async (req, res) => {
 
 let array = [];
 
-router.get('/getlq', async (req, res) => {
-    const q = await Quotes.find();
-    //const q1 = JSON.parse(q);
-    q.forEach((item, idx) => {
-        array.push([item.contents, item.author])
+// router.post('/getlq', async (req, res) => {
+//     const q = await Quotes.find().then((data) => {
+//         console.log(data);
+//         res.json({ list: q })
+//     }).catch((err) => { console.log(err); res.json({ message: false }) });
 
-    })
-    console.log(array)
+// });
+
+router.get('/getlq', async (req, res) => {
+    try {
+        const quotes = await Quotes.find();
+        res.json(quotes);
+    } catch (err) {
+        console.log(err);
+        res.json({ message: "false" })
+    }
 })
 
 module.exports = router 
