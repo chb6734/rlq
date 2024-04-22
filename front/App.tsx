@@ -72,11 +72,14 @@ function App(): React.JSX.Element {
   // return <HomeScreen />;
   return (
     <View>
-      <Text style={styles.titleSize}>
-        {/* {qoutes?[Math.floor(Math.random() * qoutes.length)]} */}
-        {qoutes?.contents}
-      </Text>
-      <Text style={styles.authorSize}>{'-' + qoutes?.author + '-'}</Text>
+      {qoutes ? (
+        <>
+          <Text style={styles.titleSize}>{qoutes?.contents}</Text>
+          <Text style={styles.authorSize}>{'-' + qoutes?.author + '-'}</Text>
+        </>
+      ) : (
+        <Text style={styles.titleSize}>데이터가 없습니다.</Text>
+      )}
     </View>
   );
 }
