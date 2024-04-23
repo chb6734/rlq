@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Alert, Button, StyleSheet, Text, View} from 'react-native';
+import {Alert, Share, Button, StyleSheet, Text, View} from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
 
 import axios from 'axios';
@@ -16,11 +16,8 @@ function App(): React.JSX.Element {
 
   const copyQoutesToClipboard = async (qoute: QouteProps | null) => {
     try {
-      if (qoute) var text = qoute?.contents + '\n' + '-' + qoute?.author + '-';
-      else {
-        Alert.alert('복사할 명언이 없습니다.');
-        return;
-      }
+      var text = chkQoute(qoute);
+      if (!text) return;
       await Clipboard.setString(text);
       Alert.alert('복사되었습니다');
       console.log('success');
@@ -28,6 +25,27 @@ function App(): React.JSX.Element {
       Alert.alert('복사 실패');
     }
   };
+
+  const shareQoutes = async (qoute: QouteProps | null) => {
+    try {
+      var text = chkQoute(qoute);
+      if (!text) return;
+      await Share.share({message: text});
+      Alert.alert('복사되었습니다');
+      console.log('success');
+    } catch (err) {
+      Alert.alert('복사 실패');
+    }
+  };
+
+  function chkQoute(qoute: QouteProps | null) {
+    if (qoute) var text = qoute?.contents + '\n' + '-' + qoute?.author + '-';
+    else {
+      Alert.alert('복사할 명언이 없습니다.');
+      return;
+    }
+    return text;
+  }
 
   function getQouteRandomOne() {
     fetch('http://10.0.2.2:8080/getRandomOne')
@@ -59,9 +77,15 @@ function App(): React.JSX.Element {
       )}
       <Button title="새로고침" onPress={getQouteRandomOne} />
       <Button
-        title="명언 공유"
+        title="명언 복사"
         onPress={() => {
           copyQoutesToClipboard(qoutes);
+        }}
+      />
+      <Button
+        title="명언 공유"
+        onPress={() => {
+          shareQoutes(qoutes);
         }}
       />
     </View>
